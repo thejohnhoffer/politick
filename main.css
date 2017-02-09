@@ -1,5 +1,5 @@
 body, html {
-font-family: 'Electrolize', sans-serif;
+    font-family: 'Electrolize', sans-serif;
 }
 
 .bg { 
@@ -7,4 +7,15 @@ font-family: 'Electrolize', sans-serif;
     margin: 0 auto;
     max-width: 60em; 
     width: 100vw; 
+}
+
+img.pflag{
+    width: 2em;
+    height: 2em;
+}
+
+span.politick{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    font-size: larger;
 }
