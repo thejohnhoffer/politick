@@ -29,8 +29,8 @@
      id="namedview169"
      showgrid="false"
      inkscape:zoom="0.63429568"
-     inkscape:cx="342.2757"
-     inkscape:cy="407.05134"
+     inkscape:cx="405.33777"
+     inkscape:cy="-160.50731"
      inkscape:window-x="71"
      inkscape:window-y="17"
      inkscape:window-maximized="0"
@@ -776,7 +776,9 @@
   </g>
   <g
      id="g7165"
-     transform="translate(250.00036,0)">
+     transform="translate(250.00036,0)"
+     inkscape:export-xdpi="187.23589"
+     inkscape:export-ydpi="187.23589">
     <path
        sodipodi:nodetypes="sssssssss"
        inkscape:connector-curvature="0"
