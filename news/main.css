@@ -4,11 +4,22 @@ body, html {
     font-family: 'Electrolize', sans-serif;
 }
 
-.bg { 
-    display: block;
-    margin: 0 auto;
-    max-width: 60em; 
-    width: 100vw; 
+div.flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.flexing {
+    min-width: 400px;
+    max-width: 90%;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+img.banner{
+    display: block; 
+    max-width: 520px; 
 }
 
 img.pflag{

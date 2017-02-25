@@ -38,10 +38,34 @@
   </head>
   <body>
     <div id="main">
-      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=political%20AND%20news%20%3A%29" data-widget-id="835581449235464193">Tweets about political AND news :)</a>
+
+    <div class='flex'>
+      <div id="twitter_thread" class='flexing'>
+       <img class='banner' alt='Politick' src='../img/banner.png'/>
+       <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=political%20AND%20news%20%3A%29" data-widget-id="835581449235464193">Tweets about political AND news :)</a>
+      </div>
+      <div class='flexing'>
+      <div id="disqus_thread">
+      </div>
+      <div id="license">
+        <div>
+          &copy; 2017<script>
+            this_year = new Date().getFullYear()
+            this_year > 2017 && document.write("-"+this_year);
+          </script>, Politick: Some rights reserved under public license:
+          <span>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="../img/by-nc-nd.png" /></a>
+          </span>
+        </div>
+        <div>
+          The <img class='pflag' alt='pflag' src='../img/metro0.png'/> logo, the <img class='pflag' alt='pflag' src='../img/metro1.png'/> icon, and the word <span class='politick'>Politick</span> are trademarks of politick.co.
+        </div>
+      </div>
+    </div>
+
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
       </script>
-      <div id="disqus_thread"></div>
       <script>
       var disqus_config = function () {
          this.page.url = 'http://politick.co';
@@ -55,20 +79,6 @@
       })();
       </script>
     </div>
-    <div id="license">
-      <div>
-        &copy; 2017<script>
-          this_year = new Date().getFullYear()
-          this_year > 2017 && document.write("-"+this_year);
-        </script>, Politick: Some rights reserved under public license:
-        <span>
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-          <img alt="Creative Commons License" style="border-width:0" src="img/by-nc-nd.png" /></a>
-        </span>
-      </div>
-      <div>
-        The <img class='pflag' alt='pflag' src='img/metro0.png'/> logo, the <img class='pflag' alt='pflag' src='img/metro1.png'/> icon, and the word <span class='politick'>Politick</span> are trademarks of politick.co.
-      </div>
     </div>
   </body>
 </html>
