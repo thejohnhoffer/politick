@@ -39,7 +39,7 @@
   <body>
     <div id="main">
 
-    <div class='flex'>
+    <div id='embed' class='flex'>
       <div id="twitter_thread" class='flexing'>
        <img class='banner' alt='Politick' src='../img/banner.png'/>
        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=political%20AND%20news%20%3A%29" data-widget-id="835581449235464193">Tweets about political AND news :)</a>
@@ -64,22 +64,46 @@
       </div>
     </div>
 
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-      </script>
       <script>
       var disqus_config = function () {
          this.page.url = 'http://politick.co';
          this.page.identifier = '/news/index.html';
       };
-      (function() {
-        var d = document, s = d.createElement('script');
+      !function() {
+        var d = document
+        var s = d.createElement('script');
         s.src = '//politick.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
-      })();
+      }()
       </script>
+
+      <script>
+      var streamTweets = function(d,s,id){
+        var js,firstjs=d.getElementsByTagName(s)[0];
+        var p=/^http:/.test(d.location)?'http':'https';
+
+        if(!d.getElementById(id)){
+          js=d.createElement(s);
+          js.id=id;
+          js.src=p+"://platform.twitter.com/widgets.js";
+          firstjs.parentNode.insertBefore(js,firstjs);
+        }
+      }
+      var pleaseStream = new Promise(function(finish){
+        streamTweets(document,"script","twitter-wjs");
+        finish();
+      })
+      pleaseStream.then(function(){
+        twitEl = document.getElementById('twitter_thread')
+        twidget = twitEl.children
+      })
+      </script>
+
     </div>
     </div>
+    <script src="../main.js"></script>
+    <script src="../g-a.js"></script>
   </body>
 </html>
 
